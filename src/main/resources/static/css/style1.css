@@ -1,0 +1,229 @@
+* {margin:0;padding:0; border: 0 none; position: relative;}
+*, *:before, *:after {box-sizing: inherit;}
+html{
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 1.5rem;
+}
+
+.labelSize{
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+table {
+  table-layout: fixed;
+  margin: .5rem auto;
+  width: 90%;
+  box-shadow: 0 0 2px rgba(0,0,0,.4);
+  border-collapse: collapse;
+  
+}
+thead {
+  
+}
+
+.tab{
+	height: 500px;
+	 overflow: scroll;
+}
+th {
+  background: #1195b2;
+  color: #fff;
+  font-weight: 400;
+  padding: .7rem .5rem;
+  border: 3px solid #fff;
+  font-size: 1.7rem;
+  font-variant: small-caps;
+  width: 10%;
+}
+th:last-child {width: 8%;}
+tr:nth-child(even) {
+  background: rgba(17,149,178,.2);
+}
+td {
+  padding: .5rem 1rem;
+  border-right: 1px solid rgba(0,0,0,.05);
+}
+td:last-child {
+  border-right: 0 none;
+  text-align: center;
+}
+@media only screen and (max-width:600px) {
+  table{
+    width: 98%;
+  }
+  thead {display: none;}
+  tr {border-bottom: 2px solid rgba(17,149,178,.35);}
+  tr:last-child {border-bottom: 0 none;}
+  td {
+    display: block;
+    padding: .3rem .5rem;
+  }
+  td:before {
+    content: attr(data-head);
+    display: inline-block;
+    width: auto;;
+    min-width: 40%;
+    font-weight: 900;
+    padding-right: 1rem;
+    font-variant: small-caps;
+  }
+  td:last-child {text-align: left;}
+  td:nth-child(odd) {
+    background: rgba(17,149,178,.15);
+  }
+}
+
+@import "compass/css3";
+
+html, body{
+  margin:0px; padding:0px;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header{
+  z-index: 1;
+  position:fixed; 
+  width:100%; 
+  height:60px; 
+  background:rgba(0,0,0,0.1);
+}
+
+header a{
+  color:white;
+  background:rgba(0,0,0,0.1); 
+  display:inline-block; 
+  padding:0px 30px; 
+  height:60px;
+  line-height:60px; 
+  text-align:center;
+  font-family: 'Roboto Slab', serif; 
+  text-decoration:none;
+  text-transform:uppercase; 
+  letter-spacing:2px; 
+  font-weight:700;
+}
+#hero1{
+ background:url(https://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+#hero2{background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/21555/Melissani-cave-natural.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+.hero, .content{
+  text-align:center; 
+  position:relative;
+  width: 100%;
+}
+
+.inner{
+  min-height:700px;
+  position: relative;
+  overflow: scroll;
+  
+}
+
+.hero .inner{
+  background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}
+
+
+.copy{
+  position:absolute; 
+  top:50%; 
+  height:10em; 
+  margin-top:-10em; 
+  width:100%;
+ 
+}
+
+.hero h1, .hero p{ 
+  color:#fff;
+}
+
+.content h1, .content p{
+  color:#333;
+}
+
+h1{
+  margin:0px;
+  font-family: 'Roboto Slab', serif;
+  font-weight:400;
+  font-size:50px;
+  padding:0px 20px;
+}
+
+.create{
+	color: #1195b2;
+	padding: 100px;
+	border-style: solid;
+    border-width: 5px;
+}
+
+.title{
+	color: #1195b2;
+	padding-top: 35px;
+}
+
+.addevent{
+	margin: 15px;
+}
+
+.fontWhite{
+	color:white;
+}
+
+.messages{
+	width: 30%;
+    height: 450px;
+    overflow: scroll;
+    border: solid;
+    margin-left: 4em;
+ 	text-align:left;  
+	display: inline-block;
+    vertical-align: top;
+    margin-top: 3em;
+    padding: 1em;
+    
+}
+
+.commentBox{
+	position: relative;
+	left: 55em;
+	border: solid;
+	margin-top: 3em;
+	width: 20%;
+	vertical-align: top;
+	padding: 1em;
+	
+}
+
+.attendence{
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	margin-top: 3em;
+}
+
+#editForm{
+	position: absolute;
+    left: 42%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+}
+
+#btnMove{
+		position: absolute;
+    		left: 0%;
+}
